@@ -13,7 +13,6 @@ import os
 
 load_dotenv()
 
-
 path_excel = r"" #Укажите путь к вашему Excel файлу с ИСД
 df = pd.read_excel(path_excel)
 ISD = df['ИСД'].astype('str').str.rjust(7, '0')
